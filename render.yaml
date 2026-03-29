@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: carbon-verify
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:///./carbon_verify.db
+      - key: PYTHON_VERSION
+        value: "3.11"
