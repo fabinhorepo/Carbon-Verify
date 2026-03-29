@@ -76,36 +76,6 @@ carbon-verify/
 |-------|-------|
 | Email | demo@carbonverify.com |
 | Senha | demo123 |
-
-## Deploy na Render
-
-### Via Docker (Recomendado)
-1. Faça push do código para um repositório GitHub
-2. No Render Dashboard, crie um novo **Web Service**
-3. Conecte o repositório GitHub
-4. Selecione **Docker** como runtime
-5. O Dockerfile já está configurado para a porta 10000
-6. Adicione a variável de ambiente `SECRET_KEY` (gere uma chave aleatória)
-
-### Via render.yaml (Blueprint)
-1. Faça push do código para GitHub
-2. No Render, vá em **Blueprints** e conecte o repositório
-3. O `render.yaml` configura tudo automaticamente
-
-## Desenvolvimento Local
-
-```bash
-# Backend
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8001
-
-# Frontend
-cd frontend
-pnpm install
-pnpm dev
-```
-
 ## Licença
 
 Proprietário - Carbon Verify © 2026
