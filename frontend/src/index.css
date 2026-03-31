@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #059669;
+  --color-primary-dark: #047857;
+  --color-primary-light: #10b981;
+  --color-secondary: #0f172a;
+  --color-accent: #f59e0b;
+  --color-danger: #ef4444;
+  --color-warning: #f97316;
+  --color-success: #22c55e;
+  --color-info: #3b82f6;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  margin: 0;
+}
+
+.grade-aaa { background-color: #059669; color: white; }
+.grade-aa { background-color: #10b981; color: white; }
+.grade-a { background-color: #34d399; color: white; }
+.grade-bbb { background-color: #a3e635; color: #1a2e05; }
+.grade-bb { background-color: #facc15; color: #422006; }
+.grade-b { background-color: #fb923c; color: white; }
+.grade-ccc { background-color: #f97316; color: white; }
+.grade-cc { background-color: #ef4444; color: white; }
+.grade-c { background-color: #dc2626; color: white; }
+.grade-d { background-color: #991b1b; color: white; }
+
+.severity-critical { background-color: #991b1b; color: white; }
+.severity-high { background-color: #ef4444; color: white; }
+.severity-medium { background-color: #f97316; color: white; }
+.severity-low { background-color: #facc15; color: #422006; }
